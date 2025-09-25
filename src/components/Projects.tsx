@@ -5,51 +5,27 @@ import { Button } from '@/components/ui/button';
 const Projects = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'Tailwind CSS'],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
+      title: 'ARTHAMUDHRA: Malayalam Sign Language Translator',
+      description: 'Developed a comprehensive web application that translates Malayalam sign language gestures into text in real-time. This project aims to bridge communication gaps and make technology more accessible for the hearing-impaired community.',
+      technologies: ['Python', 'HTML', 'CSS', 'RandomForestClassifier', 'OpenCV', 'MediaPipe'],
+      githubUrl: 'https://github.com/abhijithus/arthamudhra',
+      liveUrl: '#',
       featured: true
     },
     {
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      technologies: ['Next.js', 'TypeScript', 'Prisma', 'WebSocket', 'Framer Motion'],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
+      title: 'Tic-Tac-Toe Using AI',
+      description: 'Built an intelligent Tic-Tac-Toe game featuring an unbeatable AI opponent powered by the Minimax algorithm. The game demonstrates advanced game theory principles and provides an engaging user experience.',
+      technologies: ['Python', 'Minimax Algorithm', 'Game Theory', 'Tkinter'],
+      githubUrl: 'https://github.com/abhijithus/tictactoe-ai',
+      liveUrl: '#',
       featured: true
-    },
-    {
-      title: 'Weather Dashboard',
-      description: 'A responsive weather application with location-based forecasts, interactive maps, and detailed weather analytics.',
-      technologies: ['Vue.js', 'OpenWeather API', 'Chart.js', 'PWA', 'SCSS'],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      featured: false
-    },
-    {
-      title: 'Social Media Analytics',
-      description: 'A comprehensive analytics dashboard for social media performance tracking with data visualization and automated reporting.',
-      technologies: ['React', 'D3.js', 'Python', 'FastAPI', 'PostgreSQL'],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      featured: false
     },
     {
       title: 'Portfolio Website',
-      description: 'A modern, responsive portfolio website built with React and TypeScript, featuring smooth animations and dark mode.',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
-      featured: false
-    },
-    {
-      title: 'API Gateway Service',
-      description: 'A microservices API gateway with rate limiting, authentication, and load balancing built with Node.js and Docker.',
-      technologies: ['Node.js', 'Docker', 'Redis', 'JWT', 'Nginx'],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
+      description: 'A modern, responsive portfolio website showcasing my projects and skills, built with React and featuring smooth animations and professional design.',
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Responsive Design'],
+      githubUrl: 'https://github.com/abhijithus/portfolio',
+      liveUrl: '#',
       featured: false
     }
   ];

@@ -6,7 +6,7 @@ import heroBg from '@/assets/hero-bg.jpg';
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const titles = ['Full Stack Developer', 'Software Engineer', 'Tech Enthusiast', 'Problem Solver'];
+  const titles = ['AIML Student', 'Machine Learning Enthusiast', 'Web Developer', 'Problem Solver'];
 
   useEffect(() => {
     const currentTitle = titles[currentIndex];
@@ -63,7 +63,7 @@ const Hero = () => {
           
           {/* Name */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 fade-in-up">
-            <span className="gradient-text">Your Name</span>
+            <span className="gradient-text">Abhijith U S</span>
           </h1>
           
           {/* Animated Title */}
@@ -76,8 +76,7 @@ const Hero = () => {
           
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed fade-in-up">
-            Passionate about creating innovative solutions and bringing ideas to life through code. 
-            I love building scalable applications and learning new technologies.
+            Aspiring AIML student passionate about machine learning, artificial intelligence, and building innovative web applications.
           </p>
           
           {/* CTA Buttons */}
@@ -102,7 +101,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-16 fade-in-up">
             <a 
-              href="https://github.com" 
+              href="https://github.com/abhijithus" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors glow"
@@ -110,7 +109,7 @@ const Hero = () => {
               <Github size={24} />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://linkedin.com/in/abhijithus" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors glow"
@@ -118,7 +117,7 @@ const Hero = () => {
               <Linkedin size={24} />
             </a>
             <a 
-              href="mailto:your.email@example.com"
+              href="mailto:abhijith03us@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors glow"
             >
               <Mail size={24} />

@@ -11,14 +11,14 @@ const Footer = () => {
             {/* Brand */}
             <div className="space-y-4">
               <h3 className="text-2xl font-bold gradient-text">
-                Portfolio
+                Abhijith U S
               </h3>
               <p className="text-muted-foreground">
-                Building digital experiences that make a difference.
+                Aspiring AIML student passionate about building intelligent solutions.
               </p>
               <div className="flex space-x-4">
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/abhijithus" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
@@ -26,7 +26,7 @@ const Footer = () => {
                   <Github size={20} />
                 </a>
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://linkedin.com/in/abhijithus" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
@@ -34,7 +34,7 @@ const Footer = () => {
                   <Linkedin size={20} />
                 </a>
                 <a 
-                  href="mailto:your.email@example.com"
+                  href="mailto:abhijith03us@gmail.com"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Mail size={20} />
@@ -51,8 +51,10 @@ const Footer = () => {
                 {[
                   { name: 'Home', href: '#home' },
                   { name: 'About', href: '#about' },
+                  { name: 'Education', href: '#education' },
                   { name: 'Skills', href: '#skills' },
                   { name: 'Projects', href: '#projects' },
+                  { name: 'Leadership', href: '#leadership' },
                   { name: 'Contact', href: '#contact' },
                 ].map((link) => (
                   <button
@@ -72,9 +74,9 @@ const Footer = () => {
                 Get In Touch
               </h4>
               <div className="space-y-2 text-muted-foreground">
-                <p>your.email@example.com</p>
-                <p>+1 (555) 123-4567</p>
-                <p>Your City, Country</p>
+                <p>abhijith03us@gmail.com</p>
+                <p>+91 8714218370</p>
+                <p>Kerala, India</p>
               </div>
             </div>
           </div>
@@ -82,7 +84,7 @@ const Footer = () => {
           {/* Bottom */}
           <div className="flex flex-col md:flex-row justify-between items-center pt-8 mt-8 border-t border-border">
             <p className="text-muted-foreground text-sm">
-              © {currentYear} Your Name. All rights reserved.
+              © {currentYear} Abhijith U S. All rights reserved.
             </p>
             <p className="text-muted-foreground text-sm flex items-center mt-4 md:mt-0">
               Made with <Heart className="w-4 h-4 mx-1 text-red-500" /> using React & TypeScript

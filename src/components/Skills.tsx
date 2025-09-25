@@ -5,39 +5,39 @@ const Skills = () => {
   const skillCategories = [
     {
       icon: Code,
-      title: 'Frontend Development',
-      skills: ['React', 'TypeScript', 'Next.js', 'Vue.js', 'Tailwind CSS', 'SASS'],
-      description: 'Creating responsive and interactive user interfaces'
+      title: 'Programming Languages',
+      skills: ['Python', 'C', 'JavaScript', 'HTML', 'CSS'],
+      description: 'Core programming languages I work with'
     },
     {
       icon: Database,
-      title: 'Backend Development',
-      skills: ['Node.js', 'Python', 'Express', 'Django', 'PostgreSQL', 'MongoDB'],
-      description: 'Building robust server-side applications and APIs'
+      title: 'Machine Learning & AI',
+      skills: ['Pandas', 'Scikit-learn', 'NumPy', 'Matplotlib', 'OpenCV', 'MediaPipe'],
+      description: 'Libraries and frameworks for AI/ML development'
     },
     {
       icon: Globe,
-      title: 'Web Technologies',
-      skills: ['HTML5', 'CSS3', 'JavaScript', 'REST APIs', 'GraphQL', 'WebSocket'],
-      description: 'Modern web standards and protocols'
-    },
-    {
-      icon: Smartphone,
-      title: 'Mobile Development',
-      skills: ['React Native', 'Flutter', 'PWA', 'Ionic', 'Mobile UI/UX'],
-      description: 'Cross-platform mobile applications'
-    },
-    {
-      icon: Cloud,
-      title: 'Cloud & DevOps',
-      skills: ['AWS', 'Docker', 'Kubernetes', 'CI/CD', 'GitHub Actions', 'Vercel'],
-      description: 'Cloud infrastructure and deployment automation'
+      title: 'Web Development',
+      skills: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design', 'Web APIs'],
+      description: 'Building modern web applications and interfaces'
     },
     {
       icon: Settings,
-      title: 'Tools & Others',
-      skills: ['Git', 'VS Code', 'Figma', 'Jest', 'Webpack', 'Linux'],
-      description: 'Development tools and methodologies'
+      title: 'Development Tools',
+      skills: ['Jupyter Notebook', 'VS Code', 'Git', 'GitHub', 'Command Line'],
+      description: 'Essential tools for development and collaboration'
+    },
+    {
+      icon: Cloud,
+      title: 'Algorithms & Techniques',
+      skills: ['RandomForestClassifier', 'Minimax Algorithm', 'Computer Vision', 'Data Analysis'],
+      description: 'Advanced algorithms and problem-solving techniques'
+    },
+    {
+      icon: Smartphone,
+      title: 'Soft Skills',
+      skills: ['Problem Solving', 'Teamwork', 'Volunteering', 'Leadership', 'Communication'],
+      description: 'Essential interpersonal and professional skills'
     }
   ];
 
@@ -100,12 +100,12 @@ const Skills = () => {
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
               {[
-                { skill: 'JavaScript/TypeScript', level: 90 },
-                { skill: 'React/Next.js', level: 85 },
-                { skill: 'Node.js/Express', level: 80 },
-                { skill: 'Python/Django', level: 75 },
-                { skill: 'Database Design', level: 85 },
-                { skill: 'Cloud Services', level: 70 }
+                { skill: 'Python Programming', level: 85 },
+                { skill: 'Machine Learning', level: 80 },
+                { skill: 'Web Development', level: 75 },
+                { skill: 'Computer Vision', level: 70 },
+                { skill: 'Data Analysis', level: 80 },
+                { skill: 'Problem Solving', level: 90 }
               ].map((item, index) => (
                 <div key={index} className="space-y-2">
                   <div className="flex justify-between">

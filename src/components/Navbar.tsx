@@ -18,8 +18,10 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
+    { name: 'Education', href: '#education' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
+    { name: 'Leadership', href: '#leadership' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -39,7 +41,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-2xl font-bold gradient-text">
-            Portfolio
+            Abhijith U S
           </div>
 
           {/* Desktop Navigation */}

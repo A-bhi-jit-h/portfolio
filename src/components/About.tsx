@@ -3,10 +3,10 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const About = () => {
   const stats = [
-    { icon: Calendar, label: 'Years of Experience', value: '3+' },
-    { icon: Award, label: 'Projects Completed', value: '25+' },
-    { icon: User, label: 'Happy Clients', value: '15+' },
-    { icon: MapPin, label: 'Location', value: 'Your City' },
+    { icon: Calendar, label: 'Academic Year', value: '2022-2026' },
+    { icon: Award, label: 'Current CGPA', value: '6.7' },
+    { icon: User, label: 'Projects Built', value: '5+' },
+    { icon: MapPin, label: 'Location', value: 'Kerala, India' },
   ];
 
   return (
@@ -27,28 +27,26 @@ const About = () => {
             {/* Content */}
             <div className="space-y-6">
               <h3 className="text-2xl md:text-3xl font-semibold text-foreground">
-                I'm a passionate developer who loves creating amazing digital experiences
+                Passionate about AI/ML and creating intelligent solutions
               </h3>
               
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  With over 3 years of experience in software development, I specialize in building 
-                  modern web applications using cutting-edge technologies. My journey started with 
-                  a curiosity about how things work, which led me to pursue computer science and 
-                  fall in love with programming.
+                  I'm currently pursuing B.Tech in Computer Science and Engineering with specialization 
+                  in Artificial Intelligence and Machine Learning at Sree Chitra Tirunal College of Engineering. 
+                  My journey in tech began with a fascination for how machines can learn and solve complex problems.
                 </p>
                 
                 <p>
-                  I believe in writing clean, maintainable code and staying up-to-date with the 
-                  latest industry trends. When I'm not coding, you can find me exploring new 
-                  technologies, contributing to open-source projects, or sharing knowledge with 
-                  the developer community.
+                  I have hands-on experience in developing machine learning applications, including a 
+                  Malayalam Sign Language Translator and AI-powered games. I'm particularly interested 
+                  in computer vision, natural language processing, and developing accessible technology solutions.
                 </p>
                 
                 <p>
-                  My goal is to create solutions that not only meet technical requirements but 
-                  also provide exceptional user experiences. I'm always excited to take on new 
-                  challenges and collaborate with like-minded professionals.
+                  When I'm not coding, you'll find me organizing technical events as an Event Coordinator 
+                  for CSI SCT SB, moderating tech communities, or exploring the latest advancements in AI. 
+                  I believe in continuous learning and sharing knowledge with the community.
                 </p>
               </div>
             </div>

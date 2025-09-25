@@ -47,19 +47,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'your.email@example.com',
-      href: 'mailto:your.email@example.com'
+      value: 'abhijith03us@gmail.com',
+      href: 'mailto:abhijith03us@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '+91 8714218370',
+      href: 'tel:+918714218370'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Your City, Country',
+      value: 'Kerala, India',
       href: '#'
     }
   ];
@@ -68,20 +68,14 @@ const Contact = () => {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com',
-      username: '@yourusername'
+      href: 'https://github.com/abhijithus',
+      username: '@abhijithus'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com',
-      username: 'Your Name'
-    },
-    {
-      icon: Twitter,
-      label: 'Twitter',
-      href: 'https://twitter.com',
-      username: '@yourusername'
+      href: 'https://linkedin.com/in/abhijithus',
+      username: 'Abhijith U S'
     }
   ];
 
@@ -238,14 +232,14 @@ const Contact = () => {
               <Card className="glass-card border-border">
                 <CardContent className="p-6 text-center">
                   <h3 className="text-lg font-semibold text-foreground mb-2">
-                    Available for Work
+                    Open to Opportunities
                   </h3>
                   <p className="text-muted-foreground mb-4">
-                    I'm currently available for freelance projects and full-time opportunities.
+                    I'm actively seeking internships and entry-level positions in AI/ML and software development.
                   </p>
                   <div className="flex items-center justify-center space-x-2">
                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                    <span className="text-sm text-green-500 font-medium">Online</span>
+                    <span className="text-sm text-green-500 font-medium">Available</span>
                   </div>
                 </CardContent>
               </Card>
