@@ -18,9 +18,9 @@ const Contact = () => {
   const { toast } = useToast();
 
   // EmailJS configuration - Replace with your actual EmailJS credentials
-  const EMAILJS_SERVICE_ID = 'your_service_id';
-  const EMAILJS_TEMPLATE_ID = 'your_template_id';
-  const EMAILJS_PUBLIC_KEY = 'your_public_key';
+  const EMAILJS_SERVICE_ID = 'service_ny10g1v';
+  const EMAILJS_TEMPLATE_ID = 'template_4wolyjl';
+  const EMAILJS_PUBLIC_KEY = '09MphpLLWZ6j1x87e';
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const {
       name,
