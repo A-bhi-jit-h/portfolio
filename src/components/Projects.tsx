@@ -6,7 +6,7 @@ const Projects = () => {
     title: 'ARTHAMUDHRA: Malayalam Sign Language Translator',
     description: 'Developed a comprehensive web application that translates Malayalam sign language gestures into text in real-time. This project aims to bridge communication gaps and make technology more accessible for the hearing-impaired community.',
     technologies: ['Python', 'HTML', 'CSS', 'RandomForestClassifier', 'OpenCV', 'MediaPipe'],
-    githubUrl: 'https://github.com/abhijithus/arthamudhra',
+    githubUrl: 'https://github.com/A-bhi-jit-h/ARTHAMUDHRA',
     featured: true
   }, {
     title: 'Tic-Tac-Toe Using AI',
