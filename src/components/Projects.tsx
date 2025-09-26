@@ -7,7 +7,6 @@ const Projects = () => {
     description: 'Developed a comprehensive web application that translates Malayalam sign language gestures into text in real-time. This project aims to bridge communication gaps and make technology more accessible for the hearing-impaired community.',
     technologies: ['Python', 'HTML', 'CSS', 'RandomForestClassifier', 'OpenCV', 'MediaPipe'],
     githubUrl: 'https://github.com/abhijithus/arthamudhra',
-    liveUrl: '#',
     featured: true
   }, {
     title: 'Tic-Tac-Toe Using AI',
@@ -58,9 +57,11 @@ const Projects = () => {
                         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                           <Github size={20} />
                         </a>
-                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                          <ExternalLink size={20} />
-                        </a>
+                        {project.liveUrl && (
+                          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                            <ExternalLink size={20} />
+                          </a>
+                        )}
                       </div>
                     </div>
                   </CardHeader>
@@ -74,11 +75,13 @@ const Projects = () => {
                         </span>)}
                     </div>
                     <div className="flex space-x-3">
-                      <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
-                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                          Live Demo
-                        </a>
-                      </Button>
+                      {project.liveUrl && (
+                        <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
+                          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                            Live Demo
+                          </a>
+                        </Button>
+                      )}
                       <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-primary" asChild>
                         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                           View Code
@@ -107,9 +110,11 @@ const Projects = () => {
                         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                           <Github size={18} />
                         </a>
-                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                          <ExternalLink size={18} />
-                        </a>
+                        {project.liveUrl && (
+                          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                            <ExternalLink size={18} />
+                          </a>
+                        )}
                       </div>
                     </div>
                   </CardHeader>
