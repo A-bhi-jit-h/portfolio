@@ -93,12 +93,12 @@ const Contact = () => {
   const socialLinks = [{
     icon: Github,
     label: 'GitHub',
-    href: 'https://github.com/abhijithus',
-    username: '@abhijithus'
+    href: 'https://github.com/A-bhi-jit-h',
+    username: '@A-bhi-jit-h'
   }, {
     icon: Linkedin,
     label: 'LinkedIn',
-    href: 'https://linkedin.com/in/abhijithus',
+    href: 'https://www.linkedin.com/in/a-bhijith-u-s',
     username: 'Abhijith U S'
   }];
   return <section id="contact" className="py-20 bg-muted/20">
