@@ -1,48 +1,61 @@
 import { Download, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import jsPDF from 'jspdf';
 
 const ResumeDownload = () => {
   const handleDownload = () => {
-    // In a real implementation, you would link to your actual resume PDF
-    // For now, this creates a simple text file as a placeholder
-    const resumeContent = `
-ABHIJITH U S
-AIML Student | Software Developer
-
-Email: abhijith03us@gmail.com
-Phone: +91 8714218370
-LinkedIn: linkedin.com/in/abhijithus
-GitHub: github.com/abhijithus
-
-EDUCATION
-• B.Tech in Computer Science and Engineering (AIML) - SCTCE (2022-2026) - CGPA: 6.7
-• AISSCE (XII) - Kendriya Vidyalaya Pangode (2022) - 88.4%
-• AISSE (X) - Kendriya Vidyalaya Pangode (2020) - 87.4%
-
-PROJECTS
-• ARTHAMUDHRA: Malayalam Sign Language Translator
-• Tic-Tac-Toe Using AI with Minimax Algorithm
-
-SKILLS
-• Languages: Python, C, HTML, CSS, JavaScript
-• Libraries: Pandas, Scikit-learn, Matplotlib, NumPy, OpenCV, MediaPipe
-• Tools: Jupyter Notebook, VS Code, Git
-
-LEADERSHIP
-• Event Coordinator, CSI SCT SB (2023-2025)
-• Discord Moderator, µLearn SCTCE (2025-Present)
-    `;
-
-    const blob = new Blob([resumeContent], { type: 'text/plain' });
-    const url = window.URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = 'Abhijith_US_Resume.txt';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    window.URL.revokeObjectURL(url);
+    const pdf = new jsPDF();
+    
+    // Set font and title
+    pdf.setFontSize(20);
+    pdf.setFont('helvetica', 'bold');
+    pdf.text('ABHIJITH U S', 20, 30);
+    
+    pdf.setFontSize(14);
+    pdf.setFont('helvetica', 'normal');
+    pdf.text('AIML Student | Software Developer', 20, 40);
+    
+    // Contact Information
+    pdf.setFontSize(12);
+    pdf.text('Email: abhijith03us@gmail.com', 20, 55);
+    pdf.text('Phone: +91 8714218370', 20, 65);
+    pdf.text('LinkedIn: www.linkedin.com/in/a-bhijith-u-s', 20, 75);
+    pdf.text('GitHub: https://github.com/A-bhi-jit-h', 20, 85);
+    
+    // Education Section
+    pdf.setFont('helvetica', 'bold');
+    pdf.text('EDUCATION', 20, 105);
+    pdf.setFont('helvetica', 'normal');
+    pdf.text('• B.Tech in Computer Science and Engineering (AIML)', 20, 115);
+    pdf.text('  SCTCE (2022-2026) - CGPA: 6.7', 25, 125);
+    pdf.text('• AISSCE (XII) - Kendriya Vidyalaya Pangode (2022) - 88.4%', 20, 135);
+    pdf.text('• AISSE (X) - Kendriya Vidyalaya Pangode (2020) - 87.4%', 20, 145);
+    
+    // Projects Section
+    pdf.setFont('helvetica', 'bold');
+    pdf.text('PROJECTS', 20, 165);
+    pdf.setFont('helvetica', 'normal');
+    pdf.text('• ARTHAMUDHRA: Malayalam Sign Language Translator', 20, 175);
+    pdf.text('• Tic-Tac-Toe Using AI with Minimax Algorithm', 20, 185);
+    
+    // Skills Section
+    pdf.setFont('helvetica', 'bold');
+    pdf.text('SKILLS', 20, 205);
+    pdf.setFont('helvetica', 'normal');
+    pdf.text('• Languages: Python, C, HTML, CSS, JavaScript', 20, 215);
+    pdf.text('• Libraries: Pandas, Scikit-learn, Matplotlib, NumPy, OpenCV, MediaPipe', 20, 225);
+    pdf.text('• Tools: Jupyter Notebook, VS Code, Git', 20, 235);
+    
+    // Leadership Section
+    pdf.setFont('helvetica', 'bold');
+    pdf.text('LEADERSHIP', 20, 255);
+    pdf.setFont('helvetica', 'normal');
+    pdf.text('• Event Coordinator, CSI SCT SB (2023-2025)', 20, 265);
+    pdf.text('• Discord Moderator, µLearn SCTCE (2025-Present)', 20, 275);
+    
+    // Save the PDF
+    pdf.save('Abhijith_US_Resume.pdf');
   };
 
   return (
