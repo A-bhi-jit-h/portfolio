@@ -1,22 +1,30 @@
 import { User, MapPin, Calendar, Award } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
-
 const About = () => {
-  const stats = [
-    { icon: Calendar, label: 'Academic Year', value: '2022-2026' },
-    { icon: Award, label: 'Current CGPA', value: '6.7' },
-    { icon: User, label: 'Projects Built', value: '5+' },
-    { icon: MapPin, label: 'Location', value: 'Kerala, India' },
-  ];
-
-  return (
-    <section id="about" className="py-20 relative">
+  const stats = [{
+    icon: Calendar,
+    label: 'Academic Year',
+    value: '2022-2026'
+  }, {
+    icon: Award,
+    label: 'Current CGPA',
+    value: '6.7'
+  }, {
+    icon: User,
+    label: 'Projects Built',
+    value: '5+'
+  }, {
+    icon: MapPin,
+    label: 'Location',
+    value: 'Kerala, India'
+  }];
+  return <section id="about" className="py-20 relative">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              About <span className="gradient-text">Me</span>
+              About <span className="gradient-text text-slate-50">Me</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Get to know me better and learn about my journey in tech
@@ -66,8 +74,7 @@ const About = () => {
 
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
-            {stats.map((stat, index) => (
-              <Card key={index} className="glass-card border-border">
+            {stats.map((stat, index) => <Card key={index} className="glass-card border-border">
                 <CardContent className="p-6 text-center">
                   <stat.icon className="w-8 h-8 text-primary mx-auto mb-4" />
                   <h4 className="text-2xl font-bold text-foreground mb-2">
@@ -77,13 +84,10 @@ const About = () => {
                     {stat.label}
                   </p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
