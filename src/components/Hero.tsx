@@ -50,6 +50,15 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
+          {/* Profile Photo */}
+          <div className="mb-8 fade-in">
+            <img 
+              src="https://freeimage.host/i/K1xEc2s" 
+              alt="Abhijith U S Profile Photo" 
+              className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto border-4 border-primary/20 object-cover shadow-2xl"
+            />
+          </div>
+          
           {/* Greeting */}
           <p className="text-lg md:text-xl text-muted-foreground mb-4 fade-in">
             Hello, I'm
