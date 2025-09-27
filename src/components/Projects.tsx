@@ -12,8 +12,8 @@ const Projects = () => {
     title: 'Tic-Tac-Toe Using AI',
     description: 'Built an intelligent Tic-Tac-Toe game featuring an unbeatable AI opponent powered by the Minimax algorithm. The game demonstrates advanced game theory principles and provides an engaging user experience.',
     technologies: ['Python', 'Minimax Algorithm', 'Game Theory', 'Tkinter'],
-    githubUrl: 'https://github.com/abhijithus/tictactoe-ai',
-    liveUrl: '#',
+    githubUrl: 'https://github.com/A-bhi-jit-h/tic-tac-toe',
+    liveUrl: 'https://a-bhi-jit-h.github.io/tic-tac-toe/',
     featured: true
   }, {
     title: 'Portfolio Website',
