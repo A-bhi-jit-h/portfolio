@@ -53,9 +53,13 @@ const Hero = () => {
           {/* Profile Photo */}
           <div className="mb-8 fade-in">
             <img 
-              src="https://freeimage.host/i/K1xEc2s" 
+              src="https://iili.io/K1xEc2s.jpg" 
               alt="Abhijith U S Profile Photo" 
               className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto border-4 border-primary/20 object-cover shadow-2xl"
+              onError={(e) => {
+                console.error('Image failed to load:', e);
+                e.currentTarget.style.display = 'none';
+              }}
             />
           </div>
           
