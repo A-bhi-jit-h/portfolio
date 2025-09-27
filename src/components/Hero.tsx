@@ -62,15 +62,10 @@ const Hero = () => {
           {/* Profile Photo */}
           <div className="mb-8 fade-in scale-in">
             <div className="relative inline-block">
-              <img 
-                src="https://iili.io/K1xEc2s.jpg" 
-                alt="Abhijith U S Profile Photo" 
-                className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto border-4 border-primary/30 object-cover shadow-2xl hover-lift neon-border"
-                onError={(e) => {
-                  console.error('Image failed to load:', e);
-                  e.currentTarget.style.display = 'none';
-                }}
-              />
+              <img src="https://iili.io/K1xEc2s.jpg" alt="Abhijith U S Profile Photo" className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto border-4 border-primary/30 object-cover shadow-2xl hover-lift neon-border" onError={e => {
+              console.error('Image failed to load:', e);
+              e.currentTarget.style.display = 'none';
+            }} />
               {/* Rotating border effect */}
               <div className="absolute inset-0 rounded-full border-2 border-transparent bg-gradient-to-r from-primary via-accent to-secondary p-1 rotate-slow">
                 <div className="w-full h-full rounded-full bg-background"></div>
@@ -85,7 +80,7 @@ const Hero = () => {
           
           {/* Name */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 fade-in-up delay-200">
-            <span className="gradient-text glow-text hover-glow">Abhijith U S</span>
+            <span className="gradient-text glow-text hover-glow text-cyan-300">Abhijith U S</span>
           </h1>
           
           {/* Animated Title */}
