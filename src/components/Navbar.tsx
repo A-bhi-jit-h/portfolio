@@ -35,22 +35,23 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'glass-card py-4' : 'py-6'
+      isScrolled ? 'glass-card-glow py-4 neon-border' : 'py-6'
     }`}>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="text-2xl font-bold gradient-text">
+          <div className="text-2xl font-bold gradient-text hover-glow pulse-glow fade-in">
             Abhijith U S
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
+          <div className="hidden md:flex items-center space-x-8 fade-in-down">
+            {navItems.map((item, index) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-foreground hover:text-primary transition-colors animated-underline"
+                className={`text-foreground hover:text-primary transition-colors animated-underline hover-glow ${index % 2 === 0 ? 'slide-in-left' : 'slide-in-right'}`}
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {item.name}
               </button>
@@ -58,7 +59,7 @@ const Navbar = () => {
             <Button 
               variant="outline" 
               onClick={() => scrollToSection('#contact')}
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground neon-border hover-lift glow"
             >
               Get In Touch
             </Button>
@@ -66,7 +67,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground"
+            className="md:hidden text-foreground hover:text-primary transition-colors hover-glow"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -75,13 +76,14 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 glass-card mt-2 py-6">
+          <div className="md:hidden absolute top-full left-0 right-0 glass-card-glow mt-2 py-6 scale-in">
             <div className="flex flex-col space-y-4 px-6">
-              {navItems.map((item) => (
+              {navItems.map((item, index) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-foreground hover:text-primary transition-colors text-left"
+                  className={`text-foreground hover:text-primary transition-colors text-left hover-glow ${index % 2 === 0 ? 'slide-in-left' : 'slide-in-right'}`}
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {item.name}
                 </button>
@@ -89,7 +91,7 @@ const Navbar = () => {
               <Button 
                 variant="outline" 
                 onClick={() => scrollToSection('#contact')}
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground mt-4"
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground mt-4 neon-border hover-lift"
               >
                 Get In Touch
               </Button>

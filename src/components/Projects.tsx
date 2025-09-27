@@ -25,28 +25,35 @@ const Projects = () => {
   }];
   const featuredProjects = projects.filter(project => project.featured);
   const otherProjects = projects.filter(project => !project.featured);
-  return <section id="projects" className="py-20">
+  return <section id="projects" className="py-20 relative overflow-hidden">
+      {/* Background particles */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-10 left-10 w-1 h-1 bg-accent rounded-full pulse-glow"></div>
+        <div className="absolute top-1/3 right-1/4 w-1.5 h-1.5 bg-primary rounded-full pulse-glow delay-200"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-1 h-1 bg-secondary rounded-full pulse-glow delay-400"></div>
+      </div>
+      
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              My <span className="gradient-text text-gray-50">Projects</span>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 fade-in-up">
+              My <span className="gradient-text glow-text">Projects</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto fade-in-up delay-200">
               A collection of work that showcases my skills and passion for development
             </p>
           </div>
 
           {/* Featured Projects */}
           <div className="mb-16">
-            <h3 className="text-2xl font-semibold mb-8">Featured Projects</h3>
+            <h3 className="text-2xl font-semibold mb-8 slide-in-left">Featured Projects</h3>
             <div className="grid lg:grid-cols-2 gap-8">
-              {featuredProjects.map((project, index) => <Card key={index} className="glass-card border-border hover:border-primary/30 transition-all duration-300 group overflow-hidden">
+              {featuredProjects.map((project, index) => <Card key={index} className="glass-card-glow border-border hover:border-primary/30 transition-all duration-300 group overflow-hidden hover-lift">
                   <CardHeader>
                     <div className="flex items-start justify-between">
                       <div className="flex items-center space-x-3">
-                        <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                        <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors pulse-glow">
                           <Folder className="w-5 h-5 text-primary" />
                         </div>
                         <CardTitle className="text-xl text-foreground group-hover:text-primary transition-colors">
