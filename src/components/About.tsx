@@ -82,7 +82,7 @@ const About = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 max-w-4xl mx-auto">
             {stats.map((stat, index) => <Card key={index} className={`glass-card-glow border-border hover-lift neon-border ${index % 2 === 0 ? 'scale-in' : 'fade-in-up'}`} style={{
             animationDelay: `${(index + 6) * 0.1}s`
           }}>
