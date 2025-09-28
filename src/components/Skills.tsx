@@ -45,7 +45,7 @@ const Skills = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 fade-in-up">
-              My <span className="gradient-text glow-text">Skills</span>
+              My <span className="gradient-text glow-text text-sky-300">Skills</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto fade-in-up delay-200">
               Technologies and tools I use to bring ideas to life
@@ -54,7 +54,9 @@ const Skills = () => {
 
           {/* Skills Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {skillCategories.map((category, index) => <Card key={index} className={`glass-card-glow border-border hover:border-primary/30 transition-all duration-300 group hover-lift ${index % 2 === 0 ? 'slide-in-left' : 'slide-in-right'}`} style={{ animationDelay: `${index * 0.1}s` }}>
+            {skillCategories.map((category, index) => <Card key={index} className={`glass-card-glow border-border hover:border-primary/30 transition-all duration-300 group hover-lift ${index % 2 === 0 ? 'slide-in-left' : 'slide-in-right'}`} style={{
+            animationDelay: `${index * 0.1}s`
+          }}>
                 <CardHeader>
                   <div className="flex items-center space-x-4">
                     <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors pulse-glow">
@@ -104,7 +106,9 @@ const Skills = () => {
             }, {
               skill: 'Problem Solving',
               level: 90
-            }].map((item, index) => <div key={index} className={`space-y-2 glass-card p-4 rounded-lg hover-lift ${index % 2 === 0 ? 'slide-in-left' : 'slide-in-right'}`} style={{ animationDelay: `${(index + 6) * 0.1}s` }}>
+            }].map((item, index) => <div key={index} className={`space-y-2 glass-card p-4 rounded-lg hover-lift ${index % 2 === 0 ? 'slide-in-left' : 'slide-in-right'}`} style={{
+              animationDelay: `${(index + 6) * 0.1}s`
+            }}>
                   <div className="flex justify-between">
                     <span className="text-foreground font-medium">{item.skill}</span>
                     <span className="text-primary glow-text">{item.level}%</span>

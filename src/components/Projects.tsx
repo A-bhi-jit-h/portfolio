@@ -38,7 +38,7 @@ const Projects = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 fade-in-up">
-              My <span className="gradient-text glow-text">Projects</span>
+              My <span className="gradient-text glow-text text-cyan-300">Projects</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto fade-in-up delay-200">
               A collection of work that showcases my skills and passion for development
@@ -64,11 +64,9 @@ const Projects = () => {
                         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                           <Github size={20} />
                         </a>
-                        {project.liveUrl && (
-                          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                        {project.liveUrl && <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                             <ExternalLink size={20} />
-                          </a>
-                        )}
+                          </a>}
                       </div>
                     </div>
                   </CardHeader>
@@ -82,13 +80,11 @@ const Projects = () => {
                         </span>)}
                     </div>
                     <div className="flex space-x-3">
-                      {project.liveUrl && (
-                        <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
+                      {project.liveUrl && <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
                           <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                             Live Demo
                           </a>
-                        </Button>
-                      )}
+                        </Button>}
                       <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-primary" asChild>
                         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                           View Code
@@ -117,11 +113,9 @@ const Projects = () => {
                         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                           <Github size={18} />
                         </a>
-                        {project.liveUrl && (
-                          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                        {project.liveUrl && <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                             <ExternalLink size={18} />
-                          </a>
-                        )}
+                          </a>}
                       </div>
                     </div>
                   </CardHeader>

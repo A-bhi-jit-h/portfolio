@@ -31,7 +31,7 @@ const About = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 fade-in-up">
-              About <span className="gradient-text glow-text">Me</span>
+              About <span className="gradient-text glow-text text-sky-300">Me</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto fade-in-up delay-200">
               Get to know me better and learn about my journey in tech
@@ -87,7 +87,9 @@ const About = () => {
 
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
-            {stats.map((stat, index) => <Card key={index} className={`glass-card-glow border-border hover-lift neon-border ${index % 2 === 0 ? 'scale-in' : 'fade-in-up'}`} style={{ animationDelay: `${(index + 6) * 0.1}s` }}>
+            {stats.map((stat, index) => <Card key={index} className={`glass-card-glow border-border hover-lift neon-border ${index % 2 === 0 ? 'scale-in' : 'fade-in-up'}`} style={{
+            animationDelay: `${(index + 6) * 0.1}s`
+          }}>
                 <CardContent className="p-6 text-center">
                   <stat.icon className="w-8 h-8 text-primary mx-auto mb-4 pulse-glow" />
                   <h4 className="text-2xl font-bold text-foreground mb-2 glow-text">
