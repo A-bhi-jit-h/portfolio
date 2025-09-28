@@ -6,7 +6,6 @@ const Education = () => {
     specialization: 'Artificial Intelligence and Machine Learning',
     institution: 'Sree Chitra Tirunal College of Engineering',
     duration: '2022 - 2026',
-    cgpa: '6.7',
     location: 'Thiruvananthapuram, Kerala',
     icon: GraduationCap,
     current: true
@@ -15,7 +14,7 @@ const Education = () => {
     specialization: 'Science',
     institution: 'Kendriya Vidyalaya Pangode',
     duration: '2022',
-    cgpa: '88.4%',
+    percentage: '88.4%',
     location: 'Thiruvananthapuram, Kerala',
     icon: Award,
     current: false
@@ -24,7 +23,7 @@ const Education = () => {
     specialization: 'Secondary Education',
     institution: 'Kendriya Vidyalaya Pangode',
     duration: '2020',
-    cgpa: '87.4%',
+    percentage: '87.4%',
     location: 'Thiruvananthapuram, Kerala',
     icon: Award,
     current: false
@@ -68,10 +67,12 @@ const Education = () => {
                         <Calendar className="w-4 h-4" />
                         <span>{edu.duration}</span>
                       </div>
-                      <div className="flex items-center space-x-2 text-primary font-semibold">
-                        <Award className="w-4 h-4" />
-                        <span>{edu.cgpa}</span>
-                      </div>
+                      {edu.percentage && (
+                        <div className="flex items-center space-x-2 text-primary font-semibold">
+                          <Award className="w-4 h-4" />
+                          <span>{edu.percentage}</span>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </CardHeader>

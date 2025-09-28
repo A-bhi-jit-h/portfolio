@@ -6,10 +6,6 @@ const About = () => {
     label: 'Academic Year',
     value: '2022-2026'
   }, {
-    icon: Award,
-    label: 'Current CGPA',
-    value: '6.7'
-  }, {
     icon: User,
     label: 'Projects Built',
     value: '5+'

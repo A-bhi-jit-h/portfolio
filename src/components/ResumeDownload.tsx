@@ -28,7 +28,7 @@ const ResumeDownload = () => {
     pdf.text('EDUCATION', 20, 105);
     pdf.setFont('helvetica', 'normal');
     pdf.text('• B.Tech in Computer Science and Engineering (AIML)', 20, 115);
-    pdf.text('  SCTCE (2022-2026) - CGPA: 6.7', 25, 125);
+    pdf.text('  SCTCE (2022-2026)', 25, 125);
     pdf.text('• AISSCE (XII) - Kendriya Vidyalaya Pangode (2022) - 88.4%', 20, 135);
     pdf.text('• AISSE (X) - Kendriya Vidyalaya Pangode (2020) - 87.4%', 20, 145);
     
